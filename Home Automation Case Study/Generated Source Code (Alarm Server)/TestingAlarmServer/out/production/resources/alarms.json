@@ -1,0 +1,263 @@
+{
+	"alarms": [
+	{
+		"ackComments": "",
+
+		"alarmId": "DEVIATION/Oxygen Concentration in Bedroom",
+
+		"isAcknowledged": false,
+
+
+		"High": {
+			"value": "10.0",
+			"message": "High Deviation alarm",
+			"severityLevel": "MEDIUM",
+			"ackRequired": false
+		},
+
+		"ExHigh": {
+			"value": "14.0",
+			"message": "  Extremely high deviation alarm",
+			"severityLevel": "CRITICAL",
+			"ackRequired": false
+		},
+
+		"Low": {
+			"value": "6.0",
+			"message": "Low deviation alarm",
+			"severityLevel": "MEDIUM",
+			"ackRequired": false
+		},
+
+		"LowLow": {
+			"value": "4.0",
+			"message": "Low low deviation alarm",
+			"severityLevel": "HIGH",
+			"ackRequired": false
+		},
+
+		"Normal": {
+			"value": "5.0",
+			"message": "Normal Range Achieved",
+			"severityLevel": "NORMAL",
+			"ackRequired": false
+		},
+
+		"ExLow": {
+			"value": "2.0",
+			"message": "  Extremely low deviation alarm",
+			"severityLevel": "CRITICAL",
+			"ackRequired": false
+		},
+
+		"HighHigh": {
+			"value": "12.0",
+			"message": "  Hight high deviation alarm",
+			"severityLevel": "HIGH",
+			"ackRequired": false
+		},
+
+
+		"alarmCurrentValue": "20.0",
+
+		"alarmDescription": "To observe the current status of concentration of Oxygen in Bedroom. ",
+
+		"alarmType": "DEVIATION",
+
+		"isSupressed": false,
+
+		"deadBand": 5.0,
+
+		"isShelved": true,
+
+		"alarmTitle": "Oxygen Concentration in Bedroom",
+
+		"setPoint": 5.0,
+
+		"alarmTag": [{
+			"tagId": "tag2ForRoomOxygen",
+
+			"tagValue": "0.0",
+
+			"tagName": "tag2 For Room Oxygen",
+			"tagAddress": "127.0.0.8/504/Input_Registers/142/2"
+		}, {
+			"tagId": "tag1ForRoomOxygen",
+
+			"tagValue": "0.0",
+
+			"tagName": "Tag1 For Room Oxygen",
+			"tagAddress": "127.0.0.7/504/Input_Registers/136/2"
+		}]
+
+
+	},
+	 {
+		"ackComments": "",
+
+		"alarmId": "LIMIT/Bedroom AC Temperature Alarm",
+
+		"isAcknowledged": false,
+
+
+		"ExHigh": {
+			"value": "40.0",
+			"message": " Extremely high limit",
+			"severityLevel": "CRITICAL",
+			"ackRequired": true
+		},
+
+		"HighHigh": {
+			"value": "33.0",
+			"message": "High high limit",
+			"severityLevel": "HIGH",
+			"ackRequired": false
+		},
+
+		"ExLow": {
+			"value": "15.0",
+			"message": "  Extremely low limit",
+			"severityLevel": "CRITICAL",
+			"ackRequired": false
+		},
+
+		"Normal": {
+			"value": "26.0",
+			"message": "Normal Limit Achieved",
+			"severityLevel": "NORMAL",
+			"ackRequired": false
+		},
+
+		"Low": {
+			"value": "23.0",
+			"message": "Low limit",
+			"severityLevel": "MEDIUM",
+			"ackRequired": false
+		},
+
+		"High": {
+			"value": "28.0",
+			"message": "High limit",
+			"severityLevel": "MEDIUM",
+			"ackRequired": false
+		},
+
+		"LowLow": {
+			"value": "20.0",
+			"message": "Low low limit",
+			"severityLevel": "HIGH",
+			"ackRequired": false
+		},
+
+
+		"alarmCurrentValue": "26.0",
+
+		"alarmDescription": "To observe the current status of room temperature of AC",
+
+		"alarmType": "LIMIT",
+
+		"isSupressed": false,
+
+		"deadBand": 26.0,
+
+		"setPoint": 26.0,
+
+		"isShelved": true,
+
+		"alarmTitle": "Bedroom AC Temperature Alarm",
+
+		"alarmTag": [{
+			"tagId": "tagForRoomACTemp",
+
+			"tagValue": "0.0",
+
+			"tagName": "Tag for Room AC Temperature",
+			"tagAddress": "127.0.0.3/504/Holding_Registers/118/2"
+		}]
+
+
+	},
+		{
+		"ackComments": "",
+
+		"alarmId": "DIGITAL/Bedroom Window Open Status",
+
+		"isAcknowledged": false,
+
+
+		"alarmRange": {
+			"value": "false",
+			"message": " Window is closed right now.",
+			"severityLevel": "MEDIUM",
+			"ackRequired": false
+		},
+
+
+		"alarmCurrentValue": "false",
+
+		"alarmDescription": "To observe the current status of Window in Bedroom ",
+
+		"alarmType": "DIGITAL",
+
+		"isSupressed": false,
+
+		"isShelved": true,
+
+		"alarmTitle": "Bedroom Window Open Status",
+
+		"setPoint": false,
+
+		"alarmTag": [{
+			"tagId": "tagForRoomWindow",
+
+			"tagValue": "false",
+
+			"tagName": "Tag For Room Window",
+			"tagAddress": "127.0.0.5/504/Coils/126/2"
+		}]
+
+
+	},
+		{
+		"ackComments": "",
+
+		"alarmId": "DIGITAL/Bedroom Bulb On Status",
+
+		"isAcknowledged": false,
+
+
+		"alarmRange": {
+			"value": "true",
+			"message": " Bulb is on now",
+			"severityLevel": "MEDIUM",
+			"ackRequired": false
+		},
+
+
+		"alarmCurrentValue": "false",
+
+		"alarmDescription": "To observe the current status of Bulb on in bedroom. ",
+
+		"alarmType": "DIGITAL",
+
+		"isSupressed": false,
+
+		"isShelved": true,
+
+		"alarmTitle": "Bedroom Bulb On Status",
+
+		"setPoint": false,
+
+		"alarmTag": [{
+			"tagId": "tagForRoomBulbOn",
+
+			"tagValue": "false",
+
+			"tagName": "Tag For Room Bulb On",
+			"tagAddress": "127.0.0.6/504/Coils/130/2"
+		}]
+
+
+	}
+	]
+}

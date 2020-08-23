@@ -1,0 +1,592 @@
+{
+  "alarms": [
+    {
+      "alarmId": "DEVIATION/Oxygen Concentration in Bedroom",
+      "Normal": {
+        "severityLevel": "NORMAL",
+        "value": "7.0",
+        "ackRequired": false,
+        "message": "Normal Range Achieved"
+      },
+      "High": {
+        "severityLevel": "MEDIUM",
+        "value": "10.0",
+        "ackRequired": false,
+        "message": "High Deviation alarm"
+      },
+      "HighHigh": {
+        "severityLevel": "HIGH",
+        "value": "12.0",
+        "ackRequired": false,
+        "message": "  Hight high deviation alarm"
+      },
+      "ExHigh": {
+        "severityLevel": "CRITICAL",
+        "value": "14.0",
+        "ackRequired": false,
+        "message": "  Extremely high deviation alarm"
+      },
+      "ExLow": {
+        "severityLevel": "CRITICAL",
+        "value": "2.0",
+        "ackRequired": false,
+        "message": "  Extremely low deviation alarm"
+      },
+      "LowLow": {
+        "severityLevel": "HIGH",
+        "value": "4.0",
+        "ackRequired": false,
+        "message": "Low low deviation alarm"
+      },
+      "Low": {
+        "severityLevel": "MEDIUM",
+        "value": "6.0",
+        "ackRequired": false,
+        "message": "Low deviation alarm"
+      },
+      "alarmTitle": "Oxygen Concentration in Bedroom",
+      "isSupressed": false,
+      "setPoint": 5,
+      "alarmType": "DEVIATION",
+      "isShelved": true,
+      "alarmCurrentValue": "20.0",
+      "alarmDescription": "To observe the current status of concentration of Oxygen in Bedroom. ",
+      "deadBand": 5,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "tag2 For Room Oxygen",
+          "tagId": "tag2ForRoomOxygen",
+          "tagAddress": "127.0.0.8/504/Input_Registers/142/2"
+        },
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag1 For Room Oxygen",
+          "tagId": "tag1ForRoomOxygen",
+          "tagAddress": "127.0.0.7/504/Input_Registers/136/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "LIMIT/Bedroom AC Temperature Alarm",
+      "HighHigh": {
+        "severityLevel": "HIGH",
+        "value": "33.0",
+        "ackRequired": false,
+        "message": "High high limit"
+      },
+      "LowLow": {
+        "severityLevel": "HIGH",
+        "value": "20.0",
+        "ackRequired": false,
+        "message": "Low low limit"
+      },
+      "ExHigh": {
+        "severityLevel": "CRITICAL",
+        "value": "40.0",
+        "ackRequired": true,
+        "message": " Extremely high limit"
+      },
+      "Low": {
+        "severityLevel": "MEDIUM",
+        "value": "23.0",
+        "ackRequired": false,
+        "message": "Low limit"
+      },
+      "ExLow": {
+        "severityLevel": "CRITICAL",
+        "value": "15.0",
+        "ackRequired": false,
+        "message": "  Extremely low limit"
+      },
+      "Normal": {
+        "severityLevel": "NORMAL",
+        "value": "26.0",
+        "ackRequired": false,
+        "message": "Normal Limit Achieved"
+      },
+      "High": {
+        "severityLevel": "MEDIUM",
+        "value": "28.0",
+        "ackRequired": false,
+        "message": "High limit"
+      },
+      "alarmTitle": "Bedroom AC Temperature Alarm",
+      "isSupressed": false,
+      "alarmType": "LIMIT",
+      "isShelved": true,
+      "alarmCurrentValue": "26.0",
+      "alarmDescription": "To observe the current status of room temperature of AC",
+      "deadBand": 26,
+      "setPoint": 26,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag for Room AC Temperature",
+          "tagId": "tagForRoomACTemp",
+          "tagAddress": "127.0.0.3/504/Holding_Registers/118/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "LIMIT/Bedroom Heater Temperature",
+      "ExHigh": {
+        "severityLevel": "CRITICAL",
+        "value": "40.0",
+        "ackRequired": false,
+        "message": " Extremely high limit"
+      },
+      "LowLow": {
+        "severityLevel": "HIGH",
+        "value": "20.0",
+        "ackRequired": false,
+        "message": "Low low limit"
+      },
+      "High": {
+        "severityLevel": "MEDIUM",
+        "value": "28.0",
+        "ackRequired": false,
+        "message": "High limit"
+      },
+      "Normal": {
+        "severityLevel": "NORMAL",
+        "value": "26.0",
+        "ackRequired": false,
+        "message": "Normal Limit Achieved"
+      },
+      "HighHigh": {
+        "severityLevel": "HIGH",
+        "value": "33.0",
+        "ackRequired": false,
+        "message": "  High high limit"
+      },
+      "ExLow": {
+        "severityLevel": "CRITICAL",
+        "value": "15.0",
+        "ackRequired": false,
+        "message": "  Extremely low limit"
+      },
+      "Low": {
+        "severityLevel": "MEDIUM",
+        "value": "25.0",
+        "ackRequired": false,
+        "message": "Low limit"
+      },
+      "alarmTitle": "Bedroom Heater Temperature",
+      "isSupressed": false,
+      "alarmType": "LIMIT",
+      "isShelved": true,
+      "alarmCurrentValue": "26.0",
+      "alarmDescription": "To observe the current temperature of Heater in Bedroom",
+      "deadBand": 26,
+      "setPoint": 26,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag for Room Heater Temperature",
+          "tagId": "tagForRoomHeaterTemp",
+          "tagAddress": "127.0.0.4/504/Holding_Registers/122/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Bedroom Window Open Status",
+      "alarmRange": {
+        "severityLevel": "MEDIUM",
+        "value": "false",
+        "ackRequired": false,
+        "message": " Window is closed right now."
+      },
+      "alarmTitle": "Bedroom Window Open Status",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": false,
+      "alarmCurrentValue": "false",
+      "alarmDescription": "To observe the current status of Window in Bedroom ",
+      "alarmTag": [
+        {
+          "tagValue": "false",
+          "tagName": "Tag For Room Window",
+          "tagId": "tagForRoomWindow",
+          "tagAddress": "127.0.0.5/504/Coils/126/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Bedroom Bulb On Status",
+      "alarmRange": {
+        "severityLevel": "MEDIUM",
+        "value": "true",
+        "ackRequired": false,
+        "message": " Bulb is on now"
+      },
+      "alarmTitle": "Bedroom Bulb On Status",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": false,
+      "alarmCurrentValue": "false",
+      "alarmDescription": "To observe the current status of Bulb on in bedroom. ",
+      "alarmTag": [
+        {
+          "tagValue": "false",
+          "tagName": "Tag For Room Bulb On",
+          "tagId": "tagForRoomBulbOn",
+          "tagAddress": "127.0.0.6/504/Coils/130/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "LIMIT/Electric Oven Temperature alarm",
+      "High": {
+        "severityLevel": "MEDIUM",
+        "value": "125.0",
+        "ackRequired": false,
+        "message": " High limit"
+      },
+      "HighHigh": {
+        "severityLevel": "HIGH",
+        "value": "135.0",
+        "ackRequired": false,
+        "message": " High high limit"
+      },
+      "LowLow": {
+        "severityLevel": "HIGH",
+        "value": "85.0",
+        "ackRequired": false,
+        "message": "Low low imit"
+      },
+      "ExLow": {
+        "severityLevel": "CRITICAL",
+        "value": "70.0",
+        "ackRequired": false,
+        "message": " Extremely low limit"
+      },
+      "Low": {
+        "severityLevel": "MEDIUM",
+        "value": ".0",
+        "ackRequired": false,
+        "message": " Low limit"
+      },
+      "ExHigh": {
+        "severityLevel": "CRITICAL",
+        "value": "145.0",
+        "ackRequired": false,
+        "message": " Extremely high limit"
+      },
+      "Normal": {
+        "severityLevel": "NORMAL",
+        "value": "120.0",
+        "ackRequired": false,
+        "message": " Normal Limit Achieved"
+      },
+      "alarmTitle": "Electric Oven Temperature alarm",
+      "isSupressed": false,
+      "alarmType": "LIMIT",
+      "isShelved": true,
+      "alarmCurrentValue": "10",
+      "alarmDescription": "To observe the current value of Ectric Oven in Kitchen",
+      "deadBand": 110,
+      "setPoint": 120,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Electric Oven Kitchen",
+          "tagId": "tagForElectricOvenKitchen",
+          "tagAddress": "127.0.0.21/504/Holding_Registers/172/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Gas knob On or Off alarm",
+      "alarmRange": {
+        "severityLevel": "MEDIUM",
+        "value": "false",
+        "ackRequired": false,
+        "message": " Gas knob is off right now"
+      },
+      "alarmTitle": "Gas knob On or Off alarm",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": true,
+      "alarmCurrentValue": "true",
+      "alarmDescription": "To observe the current status Gas Knob. ",
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Gas Knob Kitchen",
+          "tagId": "tagForGasKnobKitchen",
+          "tagAddress": "127.0.0.22/504/Coils/160/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Exhaust Fan On or Off Alarm",
+      "alarmRange": {
+        "severityLevel": "MEDIUM",
+        "value": "false",
+        "ackRequired": false,
+        "message": " Exhaust fan is off right now"
+      },
+      "alarmTitle": "Exhaust Fan On or Off Alarm",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": true,
+      "alarmCurrentValue": "true",
+      "alarmDescription": "To observe the current status of a PLC Device. ",
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Exhaust Fan Kitchen",
+          "tagId": "tagForExhaustFanKitchen",
+          "tagAddress": "127.0.0.23/504/Coils/164/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Bulb on or off status alarm",
+      "alarmRange": {
+        "severityLevel": "NORMAL",
+        "value": "0.0",
+        "ackRequired": false,
+        "message": " "
+      },
+      "alarmTitle": "Bulb on or off status alarm",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": true,
+      "alarmCurrentValue": "true",
+      "alarmDescription": "To observe the current status of a PLC Device. ",
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Bulb Kitchen",
+          "tagId": "tagForBulbKitchen",
+          "tagAddress": "127.0.0.24/504/Coils/168/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "LIMIT/Chiller temperature monitor alarm",
+      "LowLow": {
+        "severityLevel": "HIGH",
+        "value": "2.0",
+        "ackRequired": false,
+        "message": "Low low limit"
+      },
+      "HighHigh": {
+        "severityLevel": "HIGH",
+        "value": "6.0",
+        "ackRequired": false,
+        "message": " High high limit"
+      },
+      "High": {
+        "severityLevel": "MEDIUM",
+        "value": "5.0",
+        "ackRequired": false,
+        "message": " High limit"
+      },
+      "ExLow": {
+        "severityLevel": "CRITICAL",
+        "value": "0.0",
+        "ackRequired": false,
+        "message": " Extremely low limit"
+      },
+      "Normal": {
+        "severityLevel": "NORMAL",
+        "value": "4.0",
+        "ackRequired": false,
+        "message": " Normal Limit Achieved"
+      },
+      "Low": {
+        "severityLevel": "MEDIUM",
+        "value": "3",
+        "ackRequired": false,
+        "message": "Low limit"
+      },
+      "ExHigh": {
+        "severityLevel": "CRITICAL",
+        "value": "8.0",
+        "ackRequired": false,
+        "message": "Extremely high limit"
+      },
+      "alarmTitle": "Chiller temperature monitor alarm",
+      "isSupressed": false,
+      "alarmType": "LIMIT",
+      "isShelved": true,
+      "alarmCurrentValue": "4.5",
+      "alarmDescription": "To observe the current status of a PLC Device. ",
+      "deadBand": 4,
+      "setPoint": 4,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Chiller Temperature Kitchen",
+          "tagId": "tagForChillerTemperatureKitchen",
+          "tagAddress": "127.0.0.25/504/Holding_Registers/176/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Motor OnOff Alarm",
+      "alarmRange": {
+        "severityLevel": "MEDIUM",
+        "value": "0.0",
+        "ackRequired": true,
+        "message": " Digital Alarm for Motor"
+      },
+      "alarmTitle": "Motor OnOff Alarm",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": false,
+      "alarmCurrentValue": "false",
+      "alarmDescription": "To observe the current status of a PLC Device on Motor.",
+      "alarmTag": [
+        {
+          "tagValue": "false",
+          "tagName": "tagNumber 1 for Motor Alarm",
+          "tagId": "tagForMotorAlarm",
+          "tagAddress": "127.0.0.1/504/Coils/114/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "ROC/Water Tank Filling Alarm.",
+      "alarmRange": {
+        "severityLevel": "MEDIUM",
+        "value": "0.0",
+        "ackRequired": false,
+        "message": " ROC Alarm for Water tank filling"
+      },
+      "alarmTitle": "Water Tank Filling Alarm.",
+      "isSupressed": false,
+      "alarmType": "ROC",
+      "isShelved": true,
+      "alarmCurrentValue": "3.5",
+      "alarmDescription": "To observe the current filling rate of Water Tank. It shouldn't exceed 4 litres per minute.",
+      "setPoint": 3,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag for Water Tank",
+          "tagId": "tagForWaterTankAlarm",
+          "tagAddress": "127.0.0.2/504/Input_Registers/104/3"
+        }
+      ]
+    },
+    {
+      "alarmId": "LIMIT/Geyser Temperature Alarm",
+      "Low": {
+        "severityLevel": "MEDIUM",
+        "value": "55.0",
+        "ackRequired": false,
+        "message": " Low limit"
+      },
+      "ExHigh": {
+        "severityLevel": "CRITICAL",
+        "value": "100.0",
+        "ackRequired": false,
+        "message": " Extremely high limit"
+      },
+      "Normal": {
+        "severityLevel": "NORMAL",
+        "value": "70.0",
+        "ackRequired": false,
+        "message": " Normal limit achieved"
+      },
+      "High": {
+        "severityLevel": "MEDIUM",
+        "value": "80.0",
+        "ackRequired": false,
+        "message": " High limit"
+      },
+      "ExLow": {
+        "severityLevel": "HIGH",
+        "value": "30.0",
+        "ackRequired": false,
+        "message": " Extremely low limit"
+      },
+      "LowLow": {
+        "severityLevel": "HIGH",
+        "value": "40.0",
+        "ackRequired": false,
+        "message": " Low low limit"
+      },
+      "HighHigh": {
+        "severityLevel": "HIGH",
+        "value": "90.0",
+        "ackRequired": false,
+        "message": " High high limit"
+      },
+      "alarmTitle": "Geyser Temperature Alarm",
+      "isSupressed": false,
+      "alarmType": "LIMIT",
+      "isShelved": true,
+      "alarmCurrentValue": "50",
+      "alarmDescription": "To observe the current Geyser Temperature",
+      "deadBand": 65,
+      "setPoint": 70,
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Geyser Temperature Alarm",
+          "tagId": "tagForGeyserTemperatureAlarm",
+          "tagAddress": "127.0.0.33/504/Holding_Registers/186/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Main Door Open Close Alarm",
+      "alarmRange": {
+        "severityLevel": "CRITICAL",
+        "value": "false",
+        "ackRequired": false,
+        "message": "Digital Alarm for Main door open close"
+      },
+      "alarmTitle": "Main Door Open Close Alarm",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": false,
+      "alarmCurrentValue": "false",
+      "alarmDescription": "To observe the current status of a PLC Device. ",
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Main Door Alarm",
+          "tagId": "tagForMainDoorAlarm",
+          "tagAddress": "127.0.0.32/504/Coils/182/2"
+        }
+      ]
+    },
+    {
+      "alarmId": "DIGITAL/Geyser OnOff Alarm",
+      "alarmRange": {
+        "severityLevel": "HIGH",
+        "value": "false",
+        "ackRequired": false,
+        "message": "Digital Alarm for Geyser On Off"
+      },
+      "alarmTitle": "Geyser OnOff Alarm",
+      "isSupressed": false,
+      "alarmType": "DIGITAL",
+      "isShelved": true,
+      "setPoint": false,
+      "alarmCurrentValue": "false",
+      "alarmDescription": "To observe the current status of a PLC Device. ",
+      "alarmTag": [
+        {
+          "tagValue": "0.0",
+          "tagName": "Tag For Geyser On Off Alarm",
+          "tagId": "tagForGeyserOnOffAlarm",
+          "tagAddress": "127.0.0.34/504/Coils/190/2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module Pods_TestingAlarmClientiOS {
+  umbrella header "Pods-TestingAlarmClientiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

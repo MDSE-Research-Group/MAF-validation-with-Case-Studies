@@ -1,0 +1,272 @@
+{
+	"alarms": [
+		{
+			"alarmId": "LIMIT/Control room Heater Temperature",
+			"HighHigh": {
+				"message": "  High high limit",
+				"value": "33.0",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"ExLow": {
+				"message": "  Extremely low limit",
+				"value": "15.0",
+				"severityLevel": "CRITICAL",
+				"ackRequired": false
+			},
+			"Low": {
+				"message": "Temperature is not ideal in the room, Please change it to 26.",
+				"value": "25.0",
+				"severityLevel": "LOW",
+				"ackRequired": false
+			},
+			"High": {
+				"message": "Temperature is not ideal in the room, Please change it to 25.",
+				"value": "28.0",
+				"severityLevel": "MEDIUM",
+				"ackRequired": false
+			},
+			"LowLow": {
+				"message": "Low low limit",
+				"value": "20.0",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"Normal": {
+				"message": "Normal Limit Achieved",
+				"value": "26.0",
+				"severityLevel": "NORMAL",
+				"ackRequired": false
+			},
+			"ExHigh": {
+				"message": " Extremely high limit",
+				"value": "40.0",
+				"severityLevel": "CRITICAL",
+				"ackRequired": false
+			},
+			"deadBand": 10,
+			"alarmDescription": "To observe the current temperature of Heater in Control room",
+			"alarmType": "LIMIT",
+			"isSupressed": false,
+			"alarmTitle": "Control room Heater Temperature",
+			"alarmCurrentValue": "25.0",
+			"isShelved": true,
+			"setPoint": 26,
+			"alarmTag": [
+				{
+					"tagId": "tagForRoomHeaterTemp",
+					"tagValue": "28.0",
+					"tagName": "Tag for Room Heater Temperature",
+					"tagAddress": "127.0.0.4/504/Holding_Registers/122/2"
+				}
+			]
+		},
+		{
+			"alarmId": "DIGITAL/Control room Bulb On Status",
+			"alarmRange": {
+				"message": "Lights are OFF now, Please check breakers!",
+				"value": "false",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"alarmDescription": "To observe the current status of Lights on in Control room. ",
+			"alarmType": "DIGITAL",
+			"isSupressed": false,
+			"alarmTitle": "Control room Lights On Status",
+			"alarmCurrentValue": "false",
+			"setPoint": false,
+			"isShelved": true,
+			"alarmTag": [
+				{
+					"tagId": "tagForRoomBulbOn",
+					"tagValue": "false",
+					"tagName": "Tag For Room Bulb On",
+					"tagAddress": "127.0.0.6/504/Coils/130/2"
+				}
+			]
+		},
+		{
+			"alarmId": "DIGITAL/Fans OnOff status in Control Room",
+			"alarmRange": {
+				"message": " Fans are turned off. Please check Power breakers",
+				"value": "false",
+				"severityLevel": "MEDIUM",
+				"ackRequired": false
+			},
+			"alarmDescription": "To observe the current status of a Fans in Control Room",
+			"alarmType": "DIGITAL",
+			"isSupressed": false,
+			"alarmTitle": "Fans On/Off status in Control Room",
+			"alarmCurrentValue": "true",
+			"setPoint": true,
+			"isShelved": true,
+			"alarmTag": [
+				{
+					"tagId": "tagForCRFans",
+					"tagValue": "0.0",
+					"tagName": "tag For Control Room Fans",
+					"tagAddress": "127.0.0.49/504/Coils/226/2"
+				}
+			]
+		},
+		{
+			"alarmId": "LIMIT/Factory floor Temperature alarm",
+			"LowLow": {
+				"message": "Low low imit",
+				"value": "85.0",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"High": {
+				"message": " High limit",
+				"value": "125.0",
+				"severityLevel": "MEDIUM",
+				"ackRequired": false
+			},
+			"Low": {
+				"message": " Temperature is Lower than the Normal range, Please check",
+				"value": "90.0",
+				"severityLevel": "MEDIUM",
+				"ackRequired": false
+			},
+			"ExHigh": {
+				"message": " Extremely high limit",
+				"value": "145.0",
+				"severityLevel": "CRITICAL",
+				"ackRequired": false
+			},
+			"ExLow": {
+				"message": " Extremely low Temperature, Please Check",
+				"value": "70.0",
+				"severityLevel": "CRITICAL",
+				"ackRequired": false
+			},
+			"HighHigh": {
+				"message": " High high limit",
+				"value": "135.0",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"Normal": {
+				"message": " Normal Limit Achieved",
+				"value": "120.0",
+				"severityLevel": "NORMAL",
+				"ackRequired": false
+			},
+			"deadBand": 50,
+			"alarmDescription": "To observe the current value of temperature in Factory floor",
+			"alarmType": "LIMIT",
+			"isSupressed": false,
+			"alarmTitle": "Factory Burner Temperature Monitor",
+			"alarmCurrentValue": "110",
+			"isShelved": true,
+			"setPoint": 120,
+			"alarmTag": [
+				{
+					"tagId": "tagForElectricOvenKitchen",
+					"tagValue": "0.0",
+					"tagName": "Tag For Electric Oven Kitchen",
+					"tagAddress": "127.0.0.21/504/Holding_Registers/172/2"
+				}
+			]
+		},
+		{
+			"alarmId": "DIGITAL/Fire alarm sensor is active",
+			"alarmRange": {
+				"message": "Fire Alarm sensor is off. Please check",
+				"value": "false",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"alarmDescription": "To observe the current status of fire alarm sensor. ",
+			"alarmType": "DIGITAL",
+			"isSupressed": false,
+			"alarmTitle": "Fire alarm sensor on Floor",
+			"alarmCurrentValue": "false",
+			"setPoint": true,
+			"isShelved": true,
+			"alarmTag": [
+				{
+					"tagId": "tagForFireAlarmSensor",
+					"tagValue": "0.0",
+					"tagName": "Tag For Fire Alarm Sensor",
+					"tagAddress": "127.0.0.22/504/Coils/160/2"
+				}
+			]
+		},
+		{
+			"alarmId": "DIGITAL/Smoke Detector Alarm in mill floor",
+			"alarmRange": {
+				"message": "Smoke detector is off right now. Please check",
+				"value": "false",
+				"severityLevel": "CRITICAL",
+				"ackRequired": false
+			},
+			"alarmDescription": "To observe the current status of a Smoke detectors on Mill floor ",
+			"alarmType": "DIGITAL",
+			"isSupressed": false,
+			"alarmTitle": "Smoke Detector monitors in Mill floor",
+			"alarmCurrentValue": "true",
+			"setPoint": true,
+			"isShelved": true,
+			"alarmTag": [
+				{
+					"tagId": "tagForSmokeDetector",
+					"tagValue": "0.0",
+					"tagName": "Tag For Smoke Detector",
+					"tagAddress": "127.0.0.23/504/Coils/164/2"
+				}
+			]
+		},
+		{
+			"alarmId": "DIGITAL/Dust Sensor on or off status alarm",
+			"alarmRange": {
+				"message": " Dust Sensor is not working. Please check",
+				"value": "false",
+				"severityLevel": "HIGH",
+				"ackRequired": false
+			},
+			"alarmDescription": "To observe the current status of a Dust Sensor  ",
+			"alarmType": "DIGITAL",
+			"isSupressed": false,
+			"alarmTitle": "Dust Sensor on or/off status monitors",
+			"alarmCurrentValue": "false",
+			"setPoint": true,
+			"isShelved": true,
+			"alarmTag": [
+				{
+					"tagId": "tagForDustSensor",
+					"tagValue": "0.0",
+					"tagName": "Tag For Dust Sensor",
+					"tagAddress": "127.0.0.24/504/Coils/168/2"
+				}
+			]
+		},
+		{
+			"ackComments": "",
+			"alarmId": "ROC/Liquid Flow Alarm.",
+			"isAcknowledged": false,
+			"alarmRange": {
+				"value": "7.0",
+				"ackRequired": false,
+				"message": " Liquid is flowing a bit faster, Please check",
+				"severityLevel": "MEDIUM"
+			},
+			"alarmType": "ROC",
+			"isShelved": true,
+			"isSupressed": false,
+			"alarmDescription": "To observe the current filling rate of Water Tank. It shouldn't exceed 4 litres per minute.",
+			"alarmTitle": "Liquid Flow monitors on mill floor",
+			"setPoint": 3,
+			"alarmCurrentValue": "4",
+			"alarmTag": [
+				{
+					"tagId": "tagForWaterTankAlarm",
+					"tagName": "Tag for Liquid Flow",
+					"tagValue": "0.0",
+					"tagAddress": "127.0.0.2/504/Input_Registers/104/3"
+				}
+			]
+		}
+	]
+}

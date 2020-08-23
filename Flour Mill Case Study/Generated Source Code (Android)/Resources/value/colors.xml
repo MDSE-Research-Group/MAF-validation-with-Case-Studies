@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#107465</color>
+    <color name="colorPrimaryDark">#757575</color>
+    <color name="colorAccent">#107465</color>
+    <color name="tab_text_not_selected">#131313</color>
+    <color name="shopBackground">#fefefe</color>
+    <color name="separator">#d3d3cc</color>
+    <color name="send_black">#1b1b1b</color>
+    <color name="send_black_pressed">#3d3d3d</color>
+    <color name="transparentPressed">#30000000</color>
+    <color name="fragment_parent_bg">#ebebeb</color>
+    <color name="text_color">#151515</color>
+    <color name="test">#151515</color>
+    <color name="Normal_Color">#fffffefe</color>
+    <color name="Low_Color">#c9ffc0</color>
+    <color name="Medium_Color">#fff200</color>
+    <color name="High_Color">#ff9500</color>
+    <color name="Critical_Color">#ffc0cb</color>
+    <color name="Catastrophic_Color">#fc0000</color>
+</resources>
+
