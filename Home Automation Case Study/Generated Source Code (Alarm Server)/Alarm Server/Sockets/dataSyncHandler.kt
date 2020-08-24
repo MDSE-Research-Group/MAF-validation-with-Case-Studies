@@ -12,20 +12,18 @@ fun newInstance() :DataSyncHandler {
 	}
 }
  val alarmsList =  mutableListOf<Alarm>() 
-fun fetchTagValuesFromServer(callBack:(responseData: String)->Unit)  {	
+fun fetchTagValuesFromServer(callBack:(responseData: String)->Unit)  {
 			val modelArray = Utilities.getModelsFromTokenizedStringsList()
         if (modelArray.size > 0) {
             modelArray.forEachIndexed { index, device ->
                 val serializedXMLString = Utilities.write2XMLString(device)
 //                println("Serialized XML String: \n $serializedXMLString")
-
                 requestServerWithXMLStream(serializedXMLString) { alamObj->
                     alarmsList.add(alamObj)
                 }
             }
             // Removing Duplicates from Alarms List
             var alarmUnique = alarmsList.distinctBy { it.alarmId }
-
             val jsonString  = JSONReader.makeJSONFromAlarms(alarmUnique)
             callBack(jsonString)
         }
@@ -61,5 +59,4 @@ fun mapResponseToAlarmList(responseObj:ResponseData,callBack: (alarmObj: Alarm) 
             }
         }
 	}
-
 }
